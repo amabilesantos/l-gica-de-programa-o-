@@ -97,7 +97,13 @@ def media_final_aprovado_reprovado(p1, p2, ep1, ep2):
     """ Recebe as notas das 2 provas e 2 exercícios de programação e retorna
     se o aluno foi ou não aprovado. As provas têm peso 7 e os exercícios
     têm peso 3. Cada parcial tem peso igual."""  
-    trim1 = (p1 * 7 + ep1 * 3) /10 
+    trim1 = (p1 * 7 + ep1 * 3)/10 
+    trim2 = (p2 * 7 + ep2 *3)/10 
+    media_final = (trim1 + trim2)/2
+    media_final = round (media_final, 2)
+    return media_final >= 7 
+     
+    
 
 
 def salario(valor_hora, horas_mensais):
@@ -108,6 +114,12 @@ def salario(valor_hora, horas_mensais):
     - INSS é 8% do salário bruto
     - IR é 11% do salário bruto
     - Sindicato é 5% do salário bruto"""
+    salario = valor_hora * horas_mensais
+    d1 = salario * 0.08
+    d2 = salario * 0.11
+    d3 =salario * 0.05 
+    sb = salario - (d1 + d2 + d3)
+    return sb
 
 
 def tinta(metros_pintar):
@@ -115,6 +127,9 @@ def tinta(metros_pintar):
     e retorna a quantidade de latas de tinta a comprar.
     A cobertura da tinta é de 3 metros por litro de tinta
     Cada lata possui 18 litros de tinta"""
+    l = metros_pintar // 3 
+    latas = l / 18
+    return round(latas)
 
 
 def duzias(ovos):
@@ -122,6 +137,9 @@ def duzias(ovos):
     correspondente. Considere sempre dúzias cheias, arredondando pra
     cima se necessário.
     '''
+    import math 
+    duzias = ovos / 12
+    return math.ceil (duzias)
 
 
 def decompor_numero(numero):
@@ -130,6 +148,7 @@ def decompor_numero(numero):
     centenas, dezenas e unidades do mesmo.
     Obs.: não utilize operações com strings
     '''
+
 
 
 def palindrome(texto):
