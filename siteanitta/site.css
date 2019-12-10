@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+/********************************************** 
+TELA INICIAL
+*************************************************/
+
+body{
+	margin: 0 auto;
+	font-family: "Georgia", sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+header{
+	height: 170px;
+	background-color: #000000; 
+	text-align: center;
+}
+
+header img{
+	position: absolute;
+	left: 14%;
+	height: 155px;
+	width: 880px;
+	margin: 10px;
+}	
+
+section img{
+	height: 200px;
+	width: 200px;
+}
+nav{
+	clear: both;
+	width: 80%;
+	margin: 0px auto:
+	height: 50px;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* Menu */
+
+nav{
+	clear: both;
+	width: 80%;
+	margin: 0px auto;
+	height: 55px;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+nav .opcao{
+	float: left;
+	width: 31.3%;
+	background-color: #8B008B;
+	color: #fff;
+	padding: 10px 0;
+	margin: 0 1%;
+	font-size: 26px;
+	border: 0px solid purple;
+	border-radius: 25px;
+}
+
+nav .hover {
+  background-color: purple;
+  color: black;
+}
+
+
+
+section{
+	clear: both;
+	min-height: 360px;
+	width: 100%;
+	margin-top: 0px;
+}
+
+section #topo{
+	width: 1050px;
+	margin: 0px auto;
+	height: 270px;
+}
+
+.arcondicionado{
+	height: 200px;
+	width: 200px;
+}
+.direito{
+	float: right;
+}
+.esquerdo{
+	float: left;
+}
+.topo2{
+	position: absolute;
+	top: 43%;
+	left: 33%;
+	height: 77px;
+	width: 463px;
+}
+
+section #titulos{
+	text-align: center;
+	height: 270px;
+	width: 680px;
+	margin: 10px auto;
+	color: #fff;
+}
+
+h2{
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 2 0px;
+	font-size: 40px;
+}
+
+h3{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+section p{
+	clear: both;
+	text-align: center;
+	margin: 10px 80px;
+}
+
+footer{
+	background-color: #8B008B;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+/*************************
+CONFIGURAÇÃO SHOWS
+**************************/
+
+.tabelaShows{
+	margin-top: -70%;
+	margin: 0px auto;
+	text-align: center;
+	width: 1040px;
+	height: 140px;
+}
+
+.tituloTabela{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Verdana", sans-serif;
+	color: #fff;
+	padding: 6px;
+	border: transparent;
+}
+
+tr,td,th{
+	border: 0px solid #B0C4DE;
+	padding: 5px;
+}
+tr,td{
+	font-size: 14px;
+}
+tr:nth-child(even) {
+	background-color: #000000;
+	color: #fff;
+}
+
+tr:nth-child(odd) {
+	background-color: 	#8B008B;
+	color: #fff;
+}
+
+#topico{
+	border-bottom: solid 1px #8B008B;
+}
+
+#topico2{
+	color: #fff;
+	font-family: Verdana;
+	font-size: 25px;
+}
+
+/***************************
+CONFIGURAÇÃO INSCRIÇÃO
+***************************/
+
+.inscricao{
+	width: 300px;
+	margin: 0px auto;
+	font-weight: bold;
+	margin-bottom: 10px;
+	background-color: #8B008B;
+}
+
+.inscricao input, .inscricao textarea, .inscricao select{
+	margin: 5px auto;
+	width: 100%;
+	padding: 5px 0;
+}
+
+.inscricao textarea{
+	height: 100px;
+	resize: none;
+}
+
+.inscricao button{
+	width: 30%;
+	margin: 0 10%;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.tituloInscricao{
+	position: absolute;
+	height: 150px;
+	width: 550px;	
+	margin-left: 420px;
+	top: 350px;
+
+}
+
+section form{
+	color: #fff;
+}
+
+section img{
+	width: 100px;
+	height: 200px;
+}
+/**********************
+MÚSICAS
+**********************/
+section img{
+	margin-right: 20px;
+	margin-top: 30px;
+	height: 260px;
+	width: 250px;
+
+}
+#Albuns{
+	text-align: center;
+}
+.tituloMusicas{
+	position: absolute;
+	top: 400px;
+	right: 450px;
+	width: 400px;
+	height: 65px;
+	
+}
+
+.plataformaDig{
+	position: absolute;
+	height: 90px;
+	width: 500px;	
+	margin-left: 450px;
+	top: 1800px;
+
+}

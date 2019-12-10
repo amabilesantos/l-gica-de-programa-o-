@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Site Artech Ar Condicionados">
+<meta name="keywords" content="Ar-condicionado, Refrigeração, Inverter, Janela, Split, Aquecedores, Artech">
+<meta name="author" content="Artech">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="site.css">
+<script src="site.js"></script>
+</head>
+<body>
+	<header>
+        <body bgcolor="#000000">
+		<img src="/home/amabile/siteanitta/titulo.jpeg" alt="Imagens Da Anitta">
+	</header>
+	<nav>
+        <a href="index.html"><div class="opcao">INÍCIO</div></a>
+        <a href="musicas.html"><div class="opcao">MÚSICAS</div></a>
+        <a href="Inscricao.html"><div class="opcao">INSCRIÇÃO</div></a>
+    </nav>
+</header>
+
+<section>
+	    <div id="topo" align="center">
+		    <img alt="Imagem kisses" src="/home/amabile/siteanitta/kissesinicial.jpg" class="topo2">
+        </div>
+    <h2>INSCRIÇÃO</h2>
+    <img class="tituloInscricao" src="/home/amabile/siteanitta/phonto.jpg">
+
+    <form name="frminscricao" method="post" action="#" onsubmit="return validaFaleConosco()">
+
+        <fieldset class="inscricao">
+            <legend>Dados Pessoais:</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="txtnome" id="nome" placeholder="Digite seu nome completo:">
+
+            <label for="fone">Telefone:</label>
+            <input type="text" name="txtfone" id="fone" placeholder="Digite seu telefone:">
+
+            <label for="email">Email:</label>
+            <input type="email" name="txtemail" id="email" placeholder="Digite seu email:">
+
+            <label for="data_nascimento">Data Nascimento</label>
+            <input type="date" name="txtdata_nascimento" id="data_nascimento">
+
+            </fieldset>
+
+            <fieldset class="inscricao">
+
+                <legend>Motivo da Participação:</legend>
+                <label for="motivo">Motivo:</label>
+
+                <select name="selmotivo" id="motivo" onchange="verificaMotivo(this.value)">
+                    <option value=" ">Escolha</option>
+                    <option value="PC">Fazer parte da comunidade</option>
+                    <option value="NR">Acesso a notícias recentes</option>
+                    <option value="FC">Informação sobre o fã clube</option>
+                </select>
+
+                <div id="opcaoInscricao"></div>
+                <label for="comentario">Comentário:</label>
+                <textarea name="txacomentario" id="comentario"></textarea>
+                <button type="reset" onclick="verificaMotivo(null)">Limpar</button><button type="submit">Enviar</button>
+
+            </fieldset>
+            </form>
+</section>
+
+<br><br><br><br>
+
+<footer>Copyright &copy;Central de Fãs 2019</footer>
+
+</body>
+</html>
